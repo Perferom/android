@@ -14,6 +14,10 @@
            fetch="git://codeaurora.org/"
            review="codeaurora.org" />
 
+  <remote  name="perferom"
+           fetch="https://github.com/NamelessRom"
+           review="gerrit.nameless-rom.org" />
+
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
