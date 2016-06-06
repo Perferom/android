@@ -10,64 +10,45 @@ To get started with Perferom, a Cyanogenmod based Android for armv6 devices, you
 familiar with [Git and Repo](http://source.android.com/source/developing.html).
 
 
-To initialize your local repository using the CyanogenMod trees, use a command like this:
+To initialize your local repository use the following command:
 
     repo init -u git://github.com/Perferom/android.git -b android-4.4
 
-Then to sync up:
+Then to sync it up:
 
     repo sync
-    sh vendor/cm/get-prebuilts
+    (possibly "sh vendor/cm/get-prebuilts")
 
-Build your device:
+Setup environment:
 
     source build/envsetup.sh
+
+Build it:
+
     brunch DEVICENAME (for ex: brunch cooper)
 
-Flash ZIP:
+Flash the ZIP the pattern of which follows the following scheme:
 
     out/target/product/DEVICENAME/cm-VERSION-DEVICENAME.zip
-
-
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
 
 
 Gerrit Code Review
 ------------------
 
-We don't have any gerrit instance as of now.
+We don't have any gerrit instance as of now but you're more than welcome to commit directly here to github.
 
-Gerrit Setup (yes double review.review, change GERRITUSERNAME with your username)
+Uploading Patches:
 
-    git config --global review.review.androidarmv6.org.username GERRITUSERNAME
-
-Uploading Patches
-
-    cd WORKING_DIR
-    source build/envsetup.sh
     cd PROJECT_DIR
-    repo start cm-11.0 .
     ... make changes ...
-    git add .
-    git commit -m "Commit message"
-    repo upload .
-    repo abandon cm-11.0 .
-
-
-
-Contact
--------
-
-For more information on this Github Organization and how it is structured, 
-please go to [http://androidarmv6.github.io/](http://androidarmv6.github.io/)
-
-Join us on #droidarmv6 (temporarily) or usually #androidarmv6 (usually - don't join this channel now) for help and support or just for a chat!
+    git checkout android-4.4
+    git add --all
+    git commit -m "Your commit message goes here"
+    git push
 
 Disclaimer
 --------
 
 All of these device are not supported by CyanogenMod since they use the old Qualcomm
-Snapdragon MSM7x27 chip, and hence cut off by the CyanogenMod team. This team (androidarmv6)
-is in no way, shape or form affiliated by the CyanogenMod team and this project is not
-endorsed or supported by the CyanogenMod team.
+Snapdragon MSM7x27 chip, and hence cut off by the CyanogenMod team. The greatest work on these repos have been done by androidarmv6 team. Without them this would not be possible.
 
