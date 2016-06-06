@@ -8,7 +8,7 @@
   <remote  name="github"
            fetch=".."
            sync-f="false"
-           review="review.perferom.org" />
+           review="gerrit.perferom.org" />
 
   <remote  name="caf"
            fetch="git://codeaurora.org/"
@@ -16,7 +16,7 @@
 
   <remote  name="perferom"
            fetch="https://github.com/Perferom"
-           review="gerrit.nameless-rom.org" />
+           review="gerrit.perferom.org" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
