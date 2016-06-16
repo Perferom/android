@@ -3,6 +3,11 @@ Perferom - Android for ARMv6 and other Legacy Devices
 Based on the very latest Android KitKat
 --------------
 
+Supported devices:
+------------------
+    Samsung Galaxy Ace (cooper)
+Don't hesitate to message me in case you want to see your device on the list. If your device was supported by Androidarmv6 team, it's going to be like a piece of pie.
+
 Getting Started
 ---------------
 
