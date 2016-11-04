@@ -465,7 +465,6 @@
     <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/perferom" name="Perferom/android_vendor_perferom" revision="android-4.4" />
-
   <include name="snippets/prebuilts.xml" />
 
   <!--<project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />-->
