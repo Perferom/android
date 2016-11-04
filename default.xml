@@ -15,7 +15,7 @@
            review="codeaurora.org" />
 
   <remote  name="perferom"
-           fetch="https://github.com/Perferom"
+           fetch=".."
            review="gerrit.perferom.org" />
 
   <remote  name="private"
